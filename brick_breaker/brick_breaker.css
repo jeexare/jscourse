@@ -1,0 +1,36 @@
+body {
+	background: #6f7284;
+}
+
+#gameCanvas {
+	margin: 0 auto;
+	display: block;
+	border-radius: 10px;
+	box-shadow: 2px 5px 15px rgb(0, 0, 0, 0.5);
+}
+
+.centerThis {
+	width: 50%;
+	margin: 0 auto;
+	display: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#score {
+	color: black;
+	font-weight: 900;
+	font-family: Helvetica;
+	font-size: 13px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
