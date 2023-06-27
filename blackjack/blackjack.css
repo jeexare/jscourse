@@ -1,0 +1,39 @@
+@import url("https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css");
+@font-face {font-family: 'Buttershine';src:url('https://dl.dropbox.com/s/1y66yhxtaxgr9x0/BUTTERSHINE%20SERIF.otf');format("truetype");}
+@font-face {font-family: 'Swansea';src:url('https://dl.dropbox.com/s/rw48zcd803cjgsn/Swansea-q3pd.ttf');format("truetype");}
+
+body {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/e8fcd6140362499.62460da22cf72.jpg");
+    background-size: cover;
+    font-family: 'Buttershine';
+	font-weight: 300;
+    text-align: center;
+	color:black;
+	width: 500px;
+  margin: 4% auto;
+}
+
+#window{
+	background:rgb(255, 255, 255, .7);
+	border-radius:1px;
+	box-shadow:0px 1px 5px 0px grey;
+	backdrop-filter:blur(3px);
+	padding: 20px;
+}
+
+#window h1{text-shadow:2px 2px 1px #888;color:#1E3D33;border-bottom:5px solid #FC0706;border-radius:5px;letter-spacing:20px;text-transform:uppercase;text-align: center;}
+
+#message{text-align: center;text-transform:uppercase;font-size:16px;font-family:'Swansea';font-style:italic}
+
+#start-button{width:45%;height:50px;margin:0 auto;background:#1E3D33;webkit-text-stroke:1px #1E3D33;color:white;font-family:'Swansea';text-align:center;box-sizing:border-box;padding:15px;text-transform:uppercase;font-weight:bold;font-size:19px;border-radius:5px;transition:.2s ease-in-out}
+
+#start-button:hover{box-shadow:inset 5px 5px 5px 5px #000;transition:.2s ease-in-out}
+
+#newcard-button{width:45%;height:50px;margin:0 auto;background:#1E3D33;webkit-text-stroke:1px #1E3D33;color:white;font-family:'Swansea';text-align:center;box-sizing:border-box;padding:15px;text-transform:uppercase;font-weight:bold;font-size:19px;border-radius:5px;transition:.2s ease-in-out;margin-top:10px;}
+
+#newcard-button:hover{box-shadow:inset 5px 5px 5px 5px #000;transition:.2s ease-in-out}
+
+#restart{position:absolute;color:white;text-shadow:1px 1px 1px #000;transition:.2s ease-in-out}
+#restart:hover{transition:.2s ease-in-out;text-shadow:3px 3px 3px #000;color:grey;}
+
+#player{text-align: center;text-transform:uppercase;font-size:16px;font-family:'Swansea';margin-top:30px;}
