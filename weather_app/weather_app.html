@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather App</title>
+<link rel="stylesheet" href="weather_app.css">
+<script src="weather_app.js"></script>
+</head>
+<body>
+    <div class="weatherApp">
+        <h1>How's the weather?</h1>
+    
+        <div class="mySearch">
+            <input id="searchInput" type="text" placeholder="Type a city"></input>
+            <select name="units" id="searchUnit">
+                <option value="imperial">Imperial</option>
+                <option value="metric">Metric</option>
+            </select>
+            <button id="searchButton">Search</button>
+        </div>
+        <div class="myResult">
+            <div id="searchOutput">
+                <div class="locationResult">
+                    <span id="searchCity"></span>,
+                    <span id="searchCountry"></span>
+                </div>
+                <table class="tableResult">
+                    <tr>
+                        <td class="myCondition" colspan="4"><span id="searchWeather"></span></td>
+                    </tr>
+                    <tr class="myTemperature">
+                        <td>Temp: <span id="searchTemp"></span></td>
+                        <td>Feels Like: <span id="searchFeels"></span></td>
+                        <td>Min: <span id="searchMin"></span></td>
+                        <td>Max: <span id="searchMax"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

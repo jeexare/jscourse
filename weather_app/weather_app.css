@@ -1,0 +1,129 @@
+body {
+	background: url("https://images.unsplash.com/photo-1514454529242-9e4677563e7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.weatherApp {
+	width: 500px;
+	background: rgb(147, 210, 218, 0.6);
+	padding: 40px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: 100px;
+	border-radius: 30px;
+	backdrop-filter: blur(10px);
+	box-shadow: -5px 10px 20px rgb(0, 0, 0, 0.3);
+}
+
+.weatherApp h1 {
+	text-transform: uppercase;
+	font-family: "Poppins";
+	font-style: italic;
+	color: rgb(34, 93, 103, 0.5);
+	-webkit-text-stroke: 0.5px #fbfbfb;
+	font-weight: 900;
+	letter-spacing: -2px;
+	width: fit-content;
+}
+
+.weatherApp h1:after {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: rgb(34, 93, 103, 0.5);
+	display: block;
+	margin-top: -10px;
+	transition: 1s ease-in-out;
+}
+.weatherApp h1:hover:after {
+	width: 100%;
+	transition: 1s ease-in-out;
+}
+.weatherApp .mySearch {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+	box-sizing: border-box;
+	padding: 0px 10px;
+}
+
+.weatherApp .mySearch #searchInput {
+	height: 100%;
+	box-sizing: border-box;
+	border: 1px solid #6fa9ab;
+	background: #e0e5e0;
+	width: 50%;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.weatherApp .mySearch #searchUnit {
+	box-sizing: border-box;
+	border: 1px solid #6fa9ab;
+	background: #e0e5e0;
+	height: 100%;
+	text-transform: uppercase;
+	font-size: 10px;
+	padding: 10px;
+}
+
+.weatherApp .mySearch #searchButton {
+	box-sizing: border-box;
+	border: 1px solid #6fa9ab;
+	background: rgb(34, 93, 103, 0.5);
+	height: 100%;
+	text-transform: uppercase;
+	font-size: 10px;
+	padding: 10px;
+	font-weight: 900;
+	color: #fbfbfb;
+	text-shadow: 1px 2px 1px rgb(0, 0, 0, 0.3);
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.weatherApp .mySearch #searchButton:hover {
+	box-shadow: inset 2px 2px 5px rgb(0, 0, 0, 0.5);
+	transition: 0.3s ease-in-out;
+}
+
+.weatherApp .myResult {
+	margin-top: 20px;
+}
+
+.weatherApp .myResult .locationResult {
+	text-transform: uppercase;
+	font-family: Poppins;
+	font-weight: 900;
+}
+
+.tableResult {
+	width: 100%;
+	border-spacing: 0px;
+}
+
+.myCondition {
+	width: 100%;
+}
+
+.myCondition span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial;
+	font-style: italic;
+}
+
+.myTemperature {
+	text-align: center;
+	font-family: Arial;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 900;
+}
+
+.myTemperature span {
+	font-weight: normal;
+}
