@@ -1,0 +1,77 @@
+@font-face {font-family: 'Momcake';src:url('https://dl.dropbox.com/s/ct4rigraulopk1t/MomcakeThin-9Y6aZ.otf');format("truetype");}
+
+body {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/e9a1f3143336649.6279139e11870.jpg");
+    background-size: cover;
+    font-family: Momcake;
+    font-weight: bold;
+    text-align: center;
+	color:white;
+}
+
+#window {
+background:rgb(255,255,255,.3);
+	backdrop-filter:blur(3px);
+	width:25%;
+	margin:0 auto;
+	box-sizing:border-box;
+	padding:20px;
+	border-radius: 10px;
+	box-shadow:5px 5px 3px #000;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+	text-shadow:1px 1px 1px #000;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+	text-shadow:1px 1px 1px #000;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+ #increment {
+    background: darkred;
+	 text-transform:uppercase;
+	 letter-spacing:2px;
+	 font-size:10px;
+}
+
+ #save {
+    background: darkgreen;
+	 text-transform:uppercase;
+	 letter-spacing:2px;
+	 font-size:10px;
+}
+
+ #reset {
+    background: #bc8a14;
+	 text-transform:uppercase;
+	 letter-spacing:2px;
+	 font-size:10px;
+}
+
+#render {
+background:rgb(255,255,255);
+	height:50px;
+	margin-top:20px;
+	box-sizing:border-box;
+	padding:10px;
+	border-radius: 2px;
+	color:black;
+	border:1px solid black;
+}
