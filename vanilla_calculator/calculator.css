@@ -1,0 +1,132 @@
+@font-face {font-family: 'Digital-7';src:url('https://dl.dropbox.com/s/ww414rgbl7syecq/digital-7.ttf');format("truetype");}
+@font-face {font-family: 'Roboto Flex';src:url('https://dl.dropbox.com/s/i12yqlde42mhnng/RobotoFlex%5BGRAD%2CXOPQ%2CXTRA%2CYOPQ%2CYTAS%2CYTDE%2CYTFI%2CYTLC%2CYTUC%2Copsz%2Cslnt%2Cwdth%2Cwght%5D.ttf');format("truetype");}
+
+body {
+    background-image: url("https://images.pexels.com/photos/7130557/pexels-photo-7130557.jpeg");
+    background-size: cover;
+    font-family: Roboto Flex;
+	font-weight: 300;
+    text-align: center;
+	color:black;
+	width: 470px;
+  margin: 4% auto;
+}
+
+#window{
+	background:rgb(252, 191, 162, .5);
+	border-radius:1px;
+/* 	border:1px solid white; */
+	box-shadow:0px 1px 5px 0px grey;
+	padding: 20px;
+}
+
+#output{
+	background:rgb(255,255,255,.8);
+	border: 1px solid #ddd;
+	border-radius: 1px;
+	height: 60px;
+	text-align:right;
+	font-size:2em;
+	letter-spacing:2px;
+	box-sizing:border-box;
+	padding:6px 5px;
+	transition: .1s ease-in-out;
+}
+
+#output:hover {
+  border: 1px solid #bbb;
+  box-shadow: inset 0px 1px 5px 0px grey;
+	transition: .1s ease-in-out;
+}
+
+.previous{
+	font-size:.2em;
+	color:grey;
+}
+.buttons{
+	display:flex;
+	width:100%;
+	margin-top:10px;
+	gap:10px;
+}
+
+.left-buttons{
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+}
+
+.top-left {
+	display:flex;
+	gap:10px;
+}
+
+.top-left div {
+	background:#DDDDDD;
+	width:100px;
+	height:50px;
+	border-radius:1px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	font-size:2em;
+	padding:5px 0px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+}
+
+.top-left div:hover {
+  border: 1px solid #bbb;
+  box-shadow: 0px 1px 5px 0px grey;
+	transition: .2s ease-in-out;
+}
+
+.bottom-left {
+	display:flex;
+	flex-wrap:wrap;
+	gap:10px;
+}
+
+.bottom-left div {
+	background:#F9F9F9;
+	width:100px;
+	height:50px;
+	border:1px solid #ddd;
+	flex-grow: 1;
+	box-sizing:border-box;
+	font-size:2em;
+	padding:5px 0px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+}
+
+.bottom-left div:hover {
+  border: 1px solid #bbb;
+  box-shadow: 0px 1px 5px 0px grey;
+	transition: .2s ease-in-out;
+}
+
+.right-buttons {
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+	
+}
+
+.right-buttons div {
+	background:#FDB6A2;
+	width:100px;
+	height:50px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	font-size:2em;
+	padding:5px 0px;
+	 cursor: pointer;
+	transition: .2s ease-in-out;
+}
+
+.right-buttons div:hover {
+	background:black;
+  border: 1px solid #F5B393;
+  color:#F5B393;
+	transition: .2s ease-in-out;
+}
