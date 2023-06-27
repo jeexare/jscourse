@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tip Calculator</title>
+<link rel="stylesheet" href="tip_calculator.css">
+<script src="tip_calculator.js"></script>
+</head>
+<body>
+
+    <div id="window">
+
+        <div class="bill-total">
+            <div class="title">Bill Total</div>
+            <div class="input-container"><span>$</span> <input type="text" id="billTotalInput" placeholder="0.00" /></div>
+        </div>
+    
+        <div class="tip">
+            <div class="title">Tip</div>
+            <div class="input-container"><span>%</span> <input type="text" id="tipInput" placeholder="10" /></div>
+        </div>
+    
+        <div class="flex">
+            <div class="people">
+                <div class="title">People</div>
+                <span><button id="minus">-</button></span>
+                <span>
+                    <div id="people-amount">1</div>
+                </span>
+                <span><button id="plus">+</button></span>
+            </div>
+    
+            <div class="total">
+                <div class="title">Total per person</div>
+                <span>$<div id="total-per-person">0.00</div></span>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
