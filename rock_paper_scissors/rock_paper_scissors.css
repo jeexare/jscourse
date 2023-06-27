@@ -1,0 +1,50 @@
+@font-face {font-family: 'Maxterboard';src:url('https://dl.dropbox.com/s/19hkigecnw0am6a/MaxterBoardSt-p6lR.ttf');format("truetype");}
+@font-face {font-family: 'Venn Trial';src:url('https://dl.dropbox.com/s/f31j95jcv2dwqz1/Venn_Trial_Rg.ttf');format("truetype");}
+
+body {
+	background: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/9eb067152967373.6327a572a9c44.png");
+	background-size:cover;
+	width:650px;
+	margin:5% auto;
+	text-align:center;
+}
+
+#window{background:rgb(0,0,0,.4);backdrop-filter:blur(3px);box-sizing:border-box;padding:50px;border-radius:10px;box-shadow:-5px 5px 5px 0px #000;}
+
+button {
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+	font-weight: bold;
+	width: 150px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	font-family: 'Maxterboard';
+	text-transform:uppercase;
+	font-weight:900;
+	text-shadow:1px 1px 1px #fff;
+	transition:.2s ease-in-out;
+	border:1px solid transparent;
+}
+
+button:hover{box-shadow:inset 5px 5px 10px 3px rgb(0,0,0,.3);transition:.2s ease-in-out}
+
+button:active{border:1px solid #ddd;box-shadow:5px 5px 10px 3px rgb(0,0,0,.3)}
+
+button[data-name="0"]{background:#225D67;
+color:#F6941E;}
+button[data-name="1"]{background:#3EAAAC;
+color:#F1705A}
+button[data-name="2"]{background:#F26D5B;
+color:#FECB5F}
+
+.flex {
+	display:flex;
+	justify-content:space-between;
+}
+
+#bothand{width:250px;height:137px;background:no-repeat url('https://i.imgur.com/KHLqwto.png');filter: drop-shadow(5px 5px 15px #000);}
+#userhand{width:250px;height:137px;background:no-repeat url('https://i.imgur.com/KHLqwto.png');transform:rotateY(160deg);filter: drop-shadow(5px 5px 15px #fecb5f);}
+
+#message{text-align:center;color:white;font-family:'Maxterboard';font-size:30px;}
