@@ -1,0 +1,21 @@
+body {
+	background:#f1705a;
+	display:flex;
+	justify-content:center;
+}
+
+#catImage img{
+	border-radius:10px 0px 0px 10px;
+	box-shadow:2px 10px 10px rgba(0,0,0,.5);
+	width:300px;
+	height:300px;
+	object-fit:cover;
+}
+
+#newImage{
+	background:#c97366;
+	border:0px;
+	border-radius:0px 10px 10px 0px;
+	box-shadow:2px 10px 10px rgba(0,0,0,.5);
+	height:300px;
+}
