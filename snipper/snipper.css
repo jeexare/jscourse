@@ -1,0 +1,142 @@
+#snipper {
+	background: #e8ebf4;
+	width: 500px;
+	height: 260px;
+	border: 3px double #c2c5ce;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+#snipper .tabs {
+	width: 100%;
+	height: 25px;
+	display: flex;
+	border-bottom: 3px double #c2c5ce;
+}
+
+.tabs button {
+	width: 50%;
+	border: none;
+	cursor: pointer;
+}
+
+.tabs button:hover {
+	background: #c5cde5;
+}
+
+.tabs button.active {
+	background: #9ba5c4;
+}
+#snipper .tab {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 10px;
+	padding-top: 20px;
+	display: none;
+}
+
+.tab.active {
+	display: block !important;
+}
+
+.insub {
+	display: flex;
+	flex-direction: column;
+}
+
+.insub strong {
+	font-family: sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+.insub textarea {
+	height: 100px;
+	border: 3px double grey;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.insni {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+.insni strong {
+	font-family: sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+.insni input {
+	border: 3px double grey;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+#addButton {
+	margin-top: 10px;
+	display: flex;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+#snippetsList {
+	height: 190px;
+	border-radius: 5px;
+	overflow-y: scroll;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+#snippetsList > div {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 3px double #c2c5ce;
+	margin-top: 5px;
+	font-family: sans-serif;
+	font-size: 13px;
+	align-items: center;
+	min-height: 30px;
+}
+
+#snippetsList > div button {
+	background: transparent;
+	border-radius: 100%;
+	width: 15px;
+	height: 15px;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 9px;
+	text-transform: uppercase;
+	border: 2px solid #914b4b;
+	cursor: pointer;
+}
+
+#snippetsList > div button:hover {
+	background: #914b4b;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
