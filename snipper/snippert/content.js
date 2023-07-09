@@ -55,7 +55,7 @@ function handleTextExpansion(event, key) {
   });
   
   function findKey(event) {
-	if (event.keyCode == 13 && event.ctrlKey) {
+	if (event.keyCode == 32 && event.ctrlKey) {
 	  return "space";
 	}
   }
