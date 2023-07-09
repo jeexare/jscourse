@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="snipper.css">
+<script src="snipper.js"></script>
+
+
+    <div id="snipper">
+
+        <div class="tabs">
+            <button class="tabbutton" data-tab="addone" id="onbutton">New Snippet</button>
+            <button class="tabbutton" data-tab="mylist">My Snippets</button>
+        </div>
+    
+        <div class="tab" data-tab="addone">
+            <div class="insub">
+                <strong>Content: Plain text</strong>
+                <textarea type="text" id="contentInput" height="100"></textarea>
+            </div>
+            <div class="insni">
+                <strong>Abbreviation: Case sensitive</strong>
+                <input type="text" id="abbInput"></input>
+            </div>
+            <button id="addButton">Add</button>
+    
+        </div>
+        <div class="tab" data-tab="mylist">
+            <div id="snippetsList"></div>
+        </div>
+    </div>

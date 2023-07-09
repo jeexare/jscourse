@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Snippert",
+  "version": "1.0",
+  "description": "A Chrome extension for managing snippets",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "snipper.html",
+    "default_icon": "icon.jpg"
+  },
+  "permissions": ["activeTab", "storage"]
+}
