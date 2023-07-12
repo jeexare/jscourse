@@ -43,22 +43,22 @@ document.addEventListener("click", (e) => {
      NEW SNIPPET
 *********************/
 function addNewSnippet(newContent, abbreviation) {
-	chrome.storage.local.get('expansions', function (data) {
+	chrome.storage.sync.get('expansions', function (data) {
 	  const expansions = data.expansions || {};
 	  expansions[abbreviation] = newContent;
 	  
-	  chrome.storage.local.set({ expansions: expansions }, function () {
+	  chrome.storage.sync.set({ expansions: expansions }, function () {
 		displaySnippets();
 	  });
 	});
   }
   
   function deleteSnippet(abbreviation) {
-	chrome.storage.local.get('expansions', function (data) {
+	chrome.storage.sync.get('expansions', function (data) {
 	  const expansions = data.expansions || {};
 	  delete expansions[abbreviation];
   
-	  chrome.storage.local.set({ expansions: expansions }, function () {
+	  chrome.storage.sync.set({ expansions: expansions }, function () {
 		displaySnippets();
 	  });
 	});
@@ -66,7 +66,7 @@ function addNewSnippet(newContent, abbreviation) {
   
 
   function displaySnippets() {
-	chrome.storage.local.get('expansions', function (data) {
+	chrome.storage.sync.get('expansions', function (data) {
 	  const expansions = data.expansions || {};
   
 	  snippetsList.innerHTML = "";

@@ -12,7 +12,7 @@ function handleTextExpansion(event, key) {
 	  break;
 	}
   
-	chrome.storage.local.get('expansions', function (data) {
+	chrome.storage.sync.get('expansions', function (data) {
 	  const expansions = data.expansions || {};
   
 	  if (expansions.hasOwnProperty(abbreviation) && key === "space") {
@@ -55,8 +55,15 @@ function handleTextExpansion(event, key) {
   });
   
   function findKey(event) {
+	var isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+	if (isMac) {
+		if (event.metaKey && event.shiftKey) {
+			return "space";
+		  }
+	}  else {
 	if (event.keyCode == 32 && event.ctrlKey) {
 	  return "space";
 	}
+}
   }
   
